@@ -6,7 +6,7 @@
 </head>
 <body>
 
-  <h1>Online Feedback Portal</h1>
+  <h1>Welcome to the Online Feedback Portal</h1>
 
   <form action="/submit-feedback" method="post">
     
@@ -18,6 +18,9 @@
       
       <label for="email">Email Address:</label><br>
       <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. 9876543210"><br><br>
     </fieldset>
 
     <br>
@@ -34,16 +37,22 @@
         <option value="Poor">Poor</option>
       </select><br><br>
       
-      <label for="comments">Comments:</label><br>
+      <label for="comments">Additional Comments:</label><br>
       <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Your feedback here..."></textarea><br><br>
+
+      <label>Would you recommend us to others?</label><br>
+      <input type="radio" id="recommend_yes" name="recommend" value="Yes" required>
+      <label for="recommend_yes">Yes</label><br>
+      <input type="radio" id="recommend_no" name="recommend" value="No">
+      <label for="recommend_no">No</label><br><br>
     </fieldset>
 
     <br>
 
     <input type="submit" value="Submit Feedback">
+    <input type="reset" value="Reset Form">
 
   </form>
 
 </body>
 </html>
-s
