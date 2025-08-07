@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Feedback Portal</title>
+</head>
+<body>
+
+  <h1>Online Feedback Portal</h1>
+
+  <form action="/submit-feedback" method="post">
+    
+    <fieldset>
+      <legend>Personal Information</legend>
+      
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Feedback</legend>
+      
+      <label for="rating">Rate Our Service:</label><br>
+      <select id="rating" name="rating" required>
+        <option value="">-- Select --</option>
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Average">Average</option>
+        <option value="Poor">Poor</option>
+      </select><br><br>
+      
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Your feedback here..."></textarea><br><br>
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Submit Feedback">
+
+  </form>
+
+</body>
+</html>
+s
